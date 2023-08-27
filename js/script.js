@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   var results = strangeArray.filter(checkString);
   
-  results.sort();
+  results.sort((a, b) => a.localeCompare(b));
   
 
   showList(results);
